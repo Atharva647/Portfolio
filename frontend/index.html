@@ -3,29 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
         name="description"
-        content="An interactive scroll-controlled animation."
+        content="Folioblox — Creative Director & Product Designer portfolio featuring interactive scroll animation."
     >
+    <title>Folioblox — Creative Director</title>
 
-    <title>Scroll Animation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="/static/js/script.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <section class="scroll-container" aria-label="Scroll animation">
-            <canvas id="cube-canvas">
-                Your browser does not support HTML canvas.
-            </canvas>
+    <!-- Fixed Background Canvas for 3D Scroll Animation -->
+    <canvas id="cube-canvas" aria-hidden="true">
+        Your browser does not support HTML canvas.
+    </canvas>
 
-            <div class="loading-message" id="loading-message">
-                Loading animation...
+    <!-- Subtle Loading Indicator -->
+    <div class="loading-message" id="loading-message">
+        <span class="spinner"></span> Loading animation...
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <a href="#" class="brand-logo" aria-label="Folioblox Home">
+                Folioblox
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+            </nav>
+
+            <a href="#contact" class="btn btn-pill-white">
+                <span class="btn-text">Get in touch</span>
+                <span class="btn-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Laid Out On Top of Scroll Animation -->
+    <main class="content-wrapper">
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero" aria-label="Hero Section">
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    <!-- Left Hero: Greeting & Giant Title -->
+                    <div class="hero-left">
+                        <p class="hero-eyebrow">Hey, I'm a</p>
+                        <h1 class="hero-title">
+                            <span class="title-line">Creative</span>
+                            <span class="title-line">Director</span>
+                        </h1>
+                    </div>
+
+                    <!-- Right Hero: Invisible Design Mission Statement -->
+                    <div class="hero-right">
+                        <h2 class="hero-statement">
+                            Great design should feel invisible.
+                        </h2>
+                        <p class="hero-substatement">
+                            From logo to language, I build brands that connect and convert.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Capabilities / Service Counters Row -->
+                <div class="hero-services-row">
+                    <div class="service-item">
+                        <span class="service-num">#01</span>
+                        <span class="service-label">Brand Strategy</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-num">#02</span>
+                        <span class="service-label">Brand Identity Design</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-num">#03</span>
+                        <span class="service-label">Packaging Design</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-num">#04</span>
+                        <span class="service-label">Creative Direction</span>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- TRUSTED BRANDS TICKER BAR -->
+        <section class="brands-section" aria-label="Trusted Brands">
+            <div class="container brands-container">
+                <p class="brands-label">Trusted by Brands I've Helped Shape</p>
+                <div class="brands-list">
+                    <!-- Brand 1: Supa Blox -->
+                    <div class="brand-item">
+                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="9"></circle>
+                        </svg>
+                        <span class="brand-name">Supa Blox</span>
+                    </div>
+
+                    <!-- Brand 2: Hype Blox -->
+                    <div class="brand-item">
+                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M5 4h14l-5 8 5 8H5l5-8-5-8z" />
+                        </svg>
+                        <span class="brand-name">Hype Blox</span>
+                    </div>
+
+                    <!-- Brand 3: Frame Blox -->
+                    <div class="brand-item">
+                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18V4c4.41 0 8 3.59 8 8s-3.59 8-8 8z" />
+                        </svg>
+                        <span class="brand-name">Frame Blox</span>
+                    </div>
+
+                    <!-- Brand 4: Ultra Blox -->
+                    <div class="brand-item">
+                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <circle cx="9" cy="12" r="7" opacity="0.9"></circle>
+                            <circle cx="15" cy="12" r="7" opacity="0.6"></circle>
+                        </svg>
+                        <span class="brand-name">Ultra Blox</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEHIND THE DESIGNS SECTION -->
+        <section class="about-section" id="about" aria-label="Behind the Designs">
+            <div class="container about-container">
+                <div class="about-grid">
+                    <!-- Left: Eyebrow + Large Title -->
+                    <div class="about-left">
+                        <span class="section-tag">Behind the Designs</span>
+                        <h2 class="about-headline">
+                            Shaping<br>
+                            Experiences That<br>
+                            Make Life Simpler
+                        </h2>
+                    </div>
+
+                    <!-- Right: Product Designer Description + CTA -->
+                    <div class="about-right">
+                        <p class="about-statement">
+                            I'm a product designer focused on building clean, intuitive interfaces that solve real-world problems.
+                        </p>
+
+                        <div class="about-cta-row">
+                            <span class="cta-note">
+                                Let's Build Something<br>Meaningful Together
+                            </span>
+                            <a href="#contact" class="btn btn-pill-orange">
+                                <span class="btn-text">Get in touch</span>
+                                <span class="btn-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SHOWCASE SECTION (3 CARDS) -->
+        <section class="projects-section" id="projects" aria-label="Selected Projects">
+            <div class="container projects-container">
+                <div class="projects-grid">
+                    <!-- Card 1: Jacket (Apparel / Technical Design) -->
+                    <article class="project-card" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img
+                                src="/static/assets/images/project-jacket.jpg"
+                                alt="Technical Outerwear Puffer Jacket design"
+                                class="card-image"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-badge">Apparel Design</span>
+                            <h3 class="card-title">Apex Puffer System</h3>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Headphones (Acoustic & Hardware Design) -->
+                    <article class="project-card" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img
+                                src="/static/assets/images/project-headphones.jpg"
+                                alt="Minimalist over-ear acoustic headphones"
+                                class="card-image"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-badge">Industrial Design</span>
+                            <h3 class="card-title">Aura Sound Hardware</h3>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Cosmetic Bottle (Luxury Packaging Design) -->
+                    <article class="project-card" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img
+                                src="/static/assets/images/project-bottle.jpg"
+                                alt="Luxury apothecary cosmetic dropper bottle packaging"
+                                class="card-image"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-badge">Packaging Design</span>
+                            <h3 class="card-title">Elysian Skincare Series</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT SECTION -->
+        <footer class="site-footer" id="contact">
+            <div class="container footer-container">
+                <div class="footer-top">
+                    <div>
+                        <h3 class="footer-title">Ready to create something remarkable?</h3>
+                        <p class="footer-subtitle">Open for select design leadership and advisory engagements.</p>
+                    </div>
+                    <a href="mailto:hello@folioblox.com" class="btn btn-pill-white">
+                        <span class="btn-text">hello@folioblox.com</span>
+                        <span class="btn-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copy">© 2026 Folioblox. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#hero">Back to top ↑</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
