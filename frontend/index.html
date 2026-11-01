@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Folioblox — Creative Director & Product Designer portfolio featuring interactive scroll animation."
-    >
-    <title>Folioblox — Creative Director</title>
+    <meta name="description"
+        content="Atharva Jagdale — AI & Data Science Engineer. Portfolio featuring projects in deep learning, computer vision, and automation.">
+    <title>Atharva Jagdale — AI & Data Science Engineer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="/static/js/script.js" defer></script>
@@ -35,20 +32,23 @@
     <!-- Header Navigation -->
     <header class="site-header" id="header">
         <div class="header-inner">
-            <a href="#" class="brand-logo" aria-label="Folioblox Home">
-                Folioblox
+            <a href="#" class="brand-logo" aria-label="Atharva Jagdale Home">
+                AJ<span class="logo-dot">.</span>
             </a>
 
             <nav class="nav-links" aria-label="Main Navigation">
                 <a href="#hero" class="nav-link active">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
             </nav>
 
             <a href="#contact" class="btn btn-pill-white">
                 <span class="btn-text">Get in touch</span>
                 <span class="btn-icon">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
@@ -59,121 +59,135 @@
 
     <!-- Main Content Laid Out On Top of Scroll Animation -->
     <main class="content-wrapper">
-        <!-- HERO SECTION -->
+
+        <!-- ==================== HERO SECTION ==================== -->
         <section class="hero-section" id="hero" aria-label="Hero Section">
             <div class="container hero-container">
                 <div class="hero-grid">
-                    <!-- Left Hero: Greeting & Giant Title -->
+                    <!-- Left Hero: Greeting & Name -->
                     <div class="hero-left">
-                        <p class="hero-eyebrow">Hey, I'm a</p>
+                        <p class="hero-eyebrow">Hey, I'm</p>
                         <h1 class="hero-title">
-                            <span class="title-line">Creative</span>
-                            <span class="title-line">Director</span>
+                            <span class="title-line">Atharva</span>
+                            <span class="title-line">Jagdale</span>
                         </h1>
                     </div>
 
-                    <!-- Right Hero: Invisible Design Mission Statement -->
+                    <!-- Right Hero: Role & Mission -->
                     <div class="hero-right">
                         <h2 class="hero-statement">
-                            Great design should feel invisible.
+                            AI &amp; ML Enthusiast
                         </h2>
                         <p class="hero-substatement">
-                            From logo to language, I build brands that connect and convert.
+                            Passionate about deep learning, computer vision, and neural architectures — exploring cutting-edge AI to build intelligent models and turn complex data into impactful solutions.
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Capabilities / Service Counters Row -->
-                <div class="hero-services-row">
-                    <div class="service-item">
-                        <span class="service-num">#01</span>
-                        <span class="service-label">Brand Strategy</span>
+        <!-- ==================== EXPERIENCE SECTION ==================== -->
+        <section class="experience-section" id="experience" aria-label="Work Experience">
+            <div class="container">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-headline">Where I've Worked</h2>
+
+                <div class="experience-timeline">
+                    <!-- LTIMindtree -->
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Quality Engineer</h3>
+                                <p class="exp-company">LTIMindtree</p>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date">Nov 2025 – Present</span>
+                                <span class="exp-location">Bhubaneshwar / Pune</span>
+                            </div>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Led a cross-functional team of 8 in designing and delivering a Selenium WebDriver test
+                                automation framework in Python</li>
+                            <li>Designed and implemented a framework following the Page Object Model (POM) pattern,
+                                covering 10+ end-to-end test scenarios on a live insurance web application</li>
+                            <li>Implemented Behavior-Driven Development (BDD), enabling readable test scenarios and
+                                better collaboration</li>
+                            <li>Built a modular framework with reusable utilities including custom WebDriverHelper,
+                                data-driven testing via Excel, structured logging, and Allure report generation</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">pytest</span>
+                            <span class="tech-tag">POM</span>
+                            <span class="tech-tag">BDD</span>
+                            <span class="tech-tag">Allure</span>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="service-num">#02</span>
-                        <span class="service-label">Brand Identity Design</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">#03</span>
-                        <span class="service-label">Packaging Design</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">#04</span>
-                        <span class="service-label">Creative Direction</span>
+
+                    <!-- Excelerate -->
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Data Analyst Intern</h3>
+                                <p class="exp-company">Excelerate</p>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date">June 2024 – July 2024</span>
+                                <span class="exp-location">Remote</span>
+                            </div>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Collaborated with a global team of 5–7 to analyze ad performance and deliver data-driven
+                                insights</li>
+                            <li>Served as the Project Scribe, documenting key discussions and progress during project
+                                meetings</li>
+                            <li>Performed data cleaning, feature engineering, and created visualizations using Pandas,
+                                Seaborn, and Matplotlib</li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- TRUSTED BRANDS TICKER BAR -->
-        <section class="brands-section" aria-label="Trusted Brands">
-            <div class="container brands-container">
-                <p class="brands-label">Trusted by Brands I've Helped Shape</p>
-                <div class="brands-list">
-                    <!-- Brand 1: Supa Blox -->
-                    <div class="brand-item">
-                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <circle cx="12" cy="12" r="9"></circle>
-                        </svg>
-                        <span class="brand-name">Supa Blox</span>
-                    </div>
-
-                    <!-- Brand 2: Hype Blox -->
-                    <div class="brand-item">
-                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                            <path d="M5 4h14l-5 8 5 8H5l5-8-5-8z" />
-                        </svg>
-                        <span class="brand-name">Hype Blox</span>
-                    </div>
-
-                    <!-- Brand 3: Frame Blox -->
-                    <div class="brand-item">
-                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18V4c4.41 0 8 3.59 8 8s-3.59 8-8 8z" />
-                        </svg>
-                        <span class="brand-name">Frame Blox</span>
-                    </div>
-
-                    <!-- Brand 4: Ultra Blox -->
-                    <div class="brand-item">
-                        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                            <circle cx="9" cy="12" r="7" opacity="0.9"></circle>
-                            <circle cx="15" cy="12" r="7" opacity="0.6"></circle>
-                        </svg>
-                        <span class="brand-name">Ultra Blox</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BEHIND THE DESIGNS SECTION -->
-        <section class="about-section" id="about" aria-label="Behind the Designs">
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about-section" id="about" aria-label="About Me">
             <div class="container about-container">
                 <div class="about-grid">
-                    <!-- Left: Eyebrow + Large Title -->
+                    <!-- Left: Tag + Large Title -->
                     <div class="about-left">
-                        <span class="section-tag">Behind the Designs</span>
+                        <span class="section-tag">About Me</span>
                         <h2 class="about-headline">
-                            Shaping<br>
-                            Experiences That<br>
-                            Make Life Simpler
+                            Engineering<br>
+                            Intelligence<br>
+                            Into Everything
                         </h2>
                     </div>
 
-                    <!-- Right: Product Designer Description + CTA -->
+                    <!-- Right: Description + CTA -->
                     <div class="about-right">
                         <p class="about-statement">
-                            I'm a product designer focused on building clean, intuitive interfaces that solve real-world problems.
+                            B.E. in Artificial Intelligence &amp; Data Science from VPKBIET Baramati (CGPA: 8.68/10). I
+                            combine deep technical skills in machine learning, computer vision, and automation with a
+                            passion for building clean, efficient solutions.
                         </p>
 
                         <div class="about-cta-row">
                             <span class="cta-note">
-                                Let's Build Something<br>Meaningful Together
+                                Open to Opportunities in<br>AI, ML &amp; Data Science
                             </span>
                             <a href="#contact" class="btn btn-pill-orange">
                                 <span class="btn-text">Get in touch</span>
                                 <span class="btn-icon">
-                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                         <polyline points="12 5 19 12 12 19"></polyline>
                                     </svg>
@@ -185,73 +199,271 @@
             </div>
         </section>
 
-        <!-- PROJECTS SHOWCASE SECTION (3 CARDS) -->
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section class="skills-section" id="skills" aria-label="Technical Skills">
+            <div class="container">
+                <span class="section-tag">Technical Skills</span>
+                <h2 class="section-headline">Tools &amp; Technologies</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Languages
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2a4 4 0 014 4c0 1.95-2 3-2 5h-4c0-2-2-3.05-2-5a4 4 0 014-4z"></path>
+                                <line x1="10" y1="14" x2="14" y2="14"></line>
+                                <line x1="10" y1="17" x2="14" y2="17"></line>
+                                <line x1="11" y1="20" x2="13" y2="20"></line>
+                            </svg>
+                            ML &amp; AI
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Seaborn</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            Tools &amp; Platforms
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Jupyter</span>
+                            <span class="skill-tag">Google Colab</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Selenium</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            Databases
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            Concepts
+                        </h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">DBMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
         <section class="projects-section" id="projects" aria-label="Selected Projects">
             <div class="container projects-container">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-headline">What I've Built</h2>
+
                 <div class="projects-grid">
-                    <!-- Card 1: Jacket (Apparel / Technical Design) -->
+                    <!-- Card 1: Accident Detection -->
                     <article class="project-card" tabindex="0">
-                        <div class="card-image-wrap">
-                            <img
-                                src="/static/assets/images/project-jacket.jpg"
-                                alt="Technical Outerwear Puffer Jacket design"
-                                class="card-image"
-                                loading="lazy"
-                            >
+                        <div class="card-visual card-gradient-1">
+                            <svg class="card-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="32" cy="32" r="24" opacity="0.3"></circle>
+                                <path d="M32 16v18l10 6"></path>
+                                <path d="M18 46l6-6 6 6 6-6 6 6 6-6"></path>
+                                <circle cx="32" cy="32" r="4"></circle>
+                            </svg>
                         </div>
-                        <div class="card-overlay">
-                            <span class="card-badge">Apparel Design</span>
-                            <h3 class="card-title">Apex Puffer System</h3>
+                        <div class="card-content">
+                            <span class="card-badge">Deep Learning</span>
+                            <h3 class="card-title">Accident Detection &amp; Emergency Alert System</h3>
+                            <p class="card-description">Real-time accident detection using YOLO &amp; CNN achieving
+                                97.8% training accuracy. Integrated Twilio SMS alerts and Streamlit dashboard for live
+                                visualization.</p>
+                            <div class="card-tech">
+                                <span>Python</span><span>YOLO</span><span>CNN</span><span>OpenCV</span><span>Streamlit</span><span>Twilio</span>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Card 2: Headphones (Acoustic & Hardware Design) -->
+                    <!-- Card 2: Face Recognition Attendance -->
                     <article class="project-card" tabindex="0">
-                        <div class="card-image-wrap">
-                            <img
-                                src="/static/assets/images/project-headphones.jpg"
-                                alt="Minimalist over-ear acoustic headphones"
-                                class="card-image"
-                                loading="lazy"
-                            >
+                        <div class="card-visual card-gradient-2">
+                            <svg class="card-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="12" y="12" width="40" height="40" rx="6" opacity="0.3"></rect>
+                                <circle cx="26" cy="28" r="4"></circle>
+                                <circle cx="38" cy="28" r="4"></circle>
+                                <path d="M24 42c0-3 4-6 8-6s8 3 8 6"></path>
+                            </svg>
                         </div>
-                        <div class="card-overlay">
-                            <span class="card-badge">Industrial Design</span>
-                            <h3 class="card-title">Aura Sound Hardware</h3>
+                        <div class="card-content">
+                            <span class="card-badge">Computer Vision</span>
+                            <h3 class="card-title">Automatic Attendance System</h3>
+                            <p class="card-description">Face recognition-based attendance monitoring that auto-activates
+                                at scheduled times, recognizes faces, and updates Excel sheets automatically.</p>
+                            <div class="card-tech">
+                                <span>Python</span><span>OpenCV</span><span>Face Recognition</span><span>Excel</span>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Card 3: Cosmetic Bottle (Luxury Packaging Design) -->
+                    <!-- Card 3: Car Condition Evaluation -->
                     <article class="project-card" tabindex="0">
-                        <div class="card-image-wrap">
-                            <img
-                                src="/static/assets/images/project-bottle.jpg"
-                                alt="Luxury apothecary cosmetic dropper bottle packaging"
-                                class="card-image"
-                                loading="lazy"
-                            >
+                        <div class="card-visual card-gradient-3">
+                            <svg class="card-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 38l6-16h24l6 16" opacity="0.3"></path>
+                                <rect x="10" y="38" width="44" height="12" rx="4"></rect>
+                                <circle cx="22" cy="50" r="4"></circle>
+                                <circle cx="42" cy="50" r="4"></circle>
+                                <path d="M26 32h12"></path>
+                                <path d="M32 28v8"></path>
+                            </svg>
                         </div>
-                        <div class="card-overlay">
-                            <span class="card-badge">Packaging Design</span>
-                            <h3 class="card-title">Elysian Skincare Series</h3>
+                        <div class="card-content">
+                            <span class="card-badge">Machine Learning</span>
+                            <h3 class="card-title">Car Condition Evaluation</h3>
+                            <p class="card-description">ML-powered evaluation system achieving 97.10% accuracy using
+                                Decision Tree classification with comprehensive data visualization.</p>
+                            <div class="card-tech">
+                                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Seaborn</span>
+                            </div>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- FOOTER / CONTACT SECTION -->
+        <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+        <section class="certs-section" id="certifications" aria-label="Certifications">
+            <div class="container">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-headline">Recognition &amp; Credentials</h2>
+
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 15l-3 3v4l3-2 3 2v-4l-3-3z"></path>
+                                <circle cx="12" cy="9" r="6"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="cert-title">Python for Data Science</h3>
+                        <p class="cert-detail">Top 1% · Gold Badge</p>
+                        <p class="cert-issuer">NPTEL</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="cert-title">Azure Fundamentals</h3>
+                        <p class="cert-detail">Microsoft Certified</p>
+                        <p class="cert-issuer">Microsoft</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="cert-title">Database Management System</h3>
+                        <p class="cert-detail">Certified</p>
+                        <p class="cert-issuer">NPTEL</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-orange)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <h3 class="cert-title">Claude Certified Associate</h3>
+                        <p class="cert-detail">Foundations</p>
+                        <p class="cert-issuer">Anthropic</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER / CONTACT ==================== -->
         <footer class="site-footer" id="contact">
             <div class="container footer-container">
                 <div class="footer-top">
                     <div>
-                        <h3 class="footer-title">Ready to create something remarkable?</h3>
-                        <p class="footer-subtitle">Open for select design leadership and advisory engagements.</p>
+                        <h3 class="footer-title">Let's build something remarkable together</h3>
+                        <p class="footer-subtitle">Open to opportunities in AI, Machine Learning &amp; Data Science.</p>
                     </div>
-                    <a href="mailto:hello@folioblox.com" class="btn btn-pill-white">
-                        <span class="btn-text">hello@folioblox.com</span>
+                    <a href="mailto:atharvajagdale2004@gmail.com" class="btn btn-pill-white">
+                        <span class="btn-text">atharvajagdale2004@gmail.com</span>
                         <span class="btn-icon">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
@@ -259,14 +471,34 @@
                     </a>
                 </div>
 
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/atharvajagdale-/" class="social-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Atharva647" class="social-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+
                 <div class="footer-bottom">
-                    <p class="footer-copy">© 2026 Folioblox. All rights reserved.</p>
+                    <p class="footer-copy">&copy; 2026 Atharva Jagdale. All rights reserved.</p>
                     <div class="footer-links">
-                        <a href="#hero">Back to top ↑</a>
+                        <a href="#hero">Back to top &uarr;</a>
                     </div>
                 </div>
             </div>
         </footer>
     </main>
 </body>
+
 </html>
