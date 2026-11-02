@@ -2,7 +2,7 @@
     "use strict";
 
     const TOTAL_FRAMES = 240;
-    const FRAME_DIRECTORY = "/static/assets/extracted_frames/";
+    const FRAME_DIRECTORY = "/assets/extracted_frames/";
 
     const canvas = document.getElementById("cube-canvas");
     const loadingMessage = document.getElementById("loading-message");

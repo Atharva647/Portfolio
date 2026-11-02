@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
@@ -13,13 +14,15 @@ def create_app() -> FastAPI:
         debug=settings.debug,
     )
 
-    app.mount(
-        "/static",
-        StaticFiles(directory=FRONTEND_DIR),
-        name="static",
-    )
-
+    # Register API routes first.
     app.include_router(router)
+
+    # Serve frontend files from the website root.
+    app.mount(
+        "/",
+        StaticFiles(directory=FRONTEND_DIR),
+        name="frontend",
+    )
 
     return app
 
