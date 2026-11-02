@@ -169,38 +169,103 @@
         );
     }
 
+
+
     /**
-     * Preload all animation frames.
+     * Load the first frame immediately, then preload
+     * the remaining frames using limited concurrency.
      */
     function preloadFrames() {
-        for (let index = 1; index <= TOTAL_FRAMES; index++) {
-            const image = new Image();
+        function loadFrame(index) {
+            return new Promise((resolve) => {
+                const image = new Image();
 
-            images[index - 1] = image;
+                images[index - 1] = image;
 
-            image.onload = () => {
-                loadedCount++;
-
-                if (!animationStarted) {
-                    animationStarted = true;
-
-                    if (loadingMessage) {
-                        loadingMessage.hidden = true;
-                    }
+                image.onload = () => {
+                    loadedCount++;
 
                     render(Math.round(currentFrame));
-                } else {
-                    render(Math.round(currentFrame));
+                    resolve(true);
+                };
+
+                image.onerror = () => {
+                    console.error(`Failed to load frame: ${getFrameUrl(index)}`);
+                    resolve(false);
+                };
+
+                image.src = getFrameUrl(index);
+            });
+        }
+
+        async function preloadRemainingFrames() {
+            let nextIndex = 2;
+
+            const worker = async () => {
+                while (nextIndex <= TOTAL_FRAMES) {
+                    const index = nextIndex++;
+                    await loadFrame(index);
                 }
             };
 
-            image.onerror = () => {
-                console.error(`Failed to load frame: ${getFrameUrl(index)}`);
-            };
-
-            image.src = getFrameUrl(index);
+            // Six simultaneous downloads.
+            await Promise.all(
+                Array.from({ length: 6 }, () => worker())
+            );
         }
+
+        // Load the first frame before starting the others.
+        loadFrame(1).then((success) => {
+            if (!success) {
+                if (loadingMessage) {
+                    loadingMessage.textContent = "Unable to load animation.";
+                }
+                return;
+            }
+
+            animationStarted = true;
+
+            if (loadingMessage) {
+                loadingMessage.hidden = true;
+            }
+
+            preloadRemainingFrames();
+        });
     }
+
+
+    // /**
+    //  * Preload all animation frames.
+    //  */
+    // function preloadFrames() {
+    //     for (let index = 1; index <= TOTAL_FRAMES; index++) {
+    //         const image = new Image();
+
+    //         images[index - 1] = image;
+
+    //         image.onload = () => {
+    //             loadedCount++;
+
+    //             if (!animationStarted) {
+    //                 animationStarted = true;
+
+    //                 if (loadingMessage) {
+    //                     loadingMessage.hidden = true;
+    //                 }
+
+    //                 render(Math.round(currentFrame));
+    //             } else {
+    //                 render(Math.round(currentFrame));
+    //             }
+    //         };
+
+    //         image.onerror = () => {
+    //             console.error(`Failed to load frame: ${getFrameUrl(index)}`);
+    //         };
+
+    //         image.src = getFrameUrl(index);
+    //     }
+    // }
 
     /**
      * Convert scroll progress into a target frame.
