@@ -220,6 +220,15 @@
 
         targetFrame = 1 + progress * (TOTAL_FRAMES - 1);
 
+        const header = document.getElementById("header");
+        if (header) {
+            if (scrollY > 30) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+
     }
 
     /**
